@@ -7,15 +7,21 @@
 
 ## Repo Layout
 - `Entrega-1.ipynb`: data exploration notebook using `gdown`, `pandas`, and `numpy`.
-- No `requirements.txt`, `pyproject.toml`, or `setup.py` detected.
+- `Proyecto/Entrega-3.ipynb`: project notebook with association rules and clustering.
+- `requirements.txt`: local Python dependencies for running notebooks.
+- No `pyproject.toml` or `setup.py` detected.
 - No `.cursor` or Copilot instruction files detected.
 
 ## Build / Lint / Test Commands
 There are no build, lint, or test commands configured in this repository.
 
 If you need to run the notebook locally:
-- Start Jupyter Lab/Notebook: `python -m jupyter lab` or `python -m jupyter notebook`.
-- Open `Entrega-1.ipynb` and run cells in order.
+- Create the virtual environment if needed: `python3 -m venv .venv`.
+- Activate it: `source .venv/bin/activate`.
+- Install dependencies: `python -m pip install -r requirements.txt`.
+- Register the kernel: `python -m ipykernel install --prefix .venv --name data-mining --display-name "Python (data-mining)"`.
+- Start Jupyter Lab/Notebook: `jupyter lab` or `jupyter notebook`.
+- Open the target notebook and select the `Python (data-mining)` kernel.
 
 If you introduce tooling, document it here and prefer these conventions:
 - Tests: `pytest` (single test: `pytest path/to/test_file.py::test_name`)
